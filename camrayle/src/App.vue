@@ -1,10 +1,35 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import ThreeScene from './components/ThreeScene.vue'
+</script>
 
 <template>
-  <h1>Welcome</h1>
-  <p>
-    whoever has rayle.com, you should sell it to me for 20$. I dont want to pay 24k.
-  </p>
+  <main>
+    <ThreeScene />
+  </main>
 </template>
 
-<style scoped></style>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  color: #f8fafc;
+  background: #090b0d;
+  font-family: Inter, ui-sans-serif, system-ui, sans-serif;
+}
+
+main {
+  width: 100%;
+  height: 100svh;
+  overflow: hidden;
+}
+</style>
